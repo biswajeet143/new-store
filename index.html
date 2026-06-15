@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<h1>My Online Store</h1>
+
+<div class="products">
+
+    <div class="card">
+        <img src="images/product1.jpg" alt="">
+        <h3>Wireless Mouse</h3>
+        <p>Price: ₹499</p>
+        <button onclick="addToCart('Wireless Mouse',499)">
+            Add To Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="images/product2.jpg" alt="">
+        <h3>Keyboard</h3>
+        <p>Price: ₹899</p>
+        <button onclick="addToCart('Keyboard',899)">
+            Add To Cart
+        </button>
+    </div>
+
+</div>
+
+<div class="cart">
+    <h2>Cart</h2>
+    <ul id="cartItems"></ul>
+    <h3>Total: ₹<span id="total">0</span></h3>
+
+    <button onclick="showForm()">
+        Confirm Order
+    </button>
+</div>
+
+<div class="order-form" id="orderForm">
+    <h2>Customer Details</h2>
+
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="text" id="phone" placeholder="Phone Number">
+    <textarea id="address" placeholder="Address"></textarea>
+
+    <button onclick="sendWhatsAppOrder()">
+        Submit Order
+    </button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
